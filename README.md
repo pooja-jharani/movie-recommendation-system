@@ -40,6 +40,22 @@ cold-start problem and gives explainable recommendations, but doesn't
 adapt to individual taste beyond genre — it can't tell a user prefers dark
 comedies specifically. A production system would combine both (hybrid).
 
+## Results
+
+| Model | Metric | Score |
+|-------|--------|-------|
+| Collaborative (SVD) | RMSE | 0.9304 |
+| Collaborative (SVD) | MAE | 0.7192 |
+| Content-based (TF-IDF + cosine) | Precision@10 (genre overlap) | 0.9869 |
+
+- SVD was evaluated on 19,355 held-out ratings (train/test split).
+- The content-based score is high partly by design: the model recommends by genre similarity and the metric checks genre overlap, so it measures consistency, not user satisfaction. The two metrics are not directly comparable.
+
+| | Collaborative | Content-based |
+|---|---|---|
+| Strength | Personalized from rating patterns | Works for new movies (no cold-start) |
+| Weakness | Cold-start for new users/movies | Less personalized, only uses genres |
+
 ### 4. Deployment (`app.py`)
 Streamlit app with two tabs — recommend by movie, or by user ID — showing
 both models side by side.
