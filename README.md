@@ -2,7 +2,7 @@
 
 A recommender that implements and compares two classic approaches, **content-based filtering** and **collaborative filtering**, with an interactive Streamlit app.
 
-**Live demo:** [**Live demo:** https://movie-recommendation-system-f4k8vfmtftrmqky2mxx3cb.streamlit.app/]
+ [**Live demo:** https://movie-recommendation-system-f4k8vfmtftrmqky2mxx3cb.streamlit.app/]
 
 ## Problem Statement
 Build a movie recommender that can suggest relevant movies either from a single seed movie (no user history needed) or personalized to a specific user's rating history, and compare the trade-offs of the two approaches.
