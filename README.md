@@ -46,8 +46,8 @@ Build a movie recommender that can suggest relevant movies either from a single 
 ## App (`app.py`)
 Streamlit app with two tabs, recommend by movie or by user ID, showing both models side by side.
 
-![Recommend by movie](images/movie-tab.png)
-![Recommend by user](images/user-tab.png)
+![Recommend by movie](images/movie-tab1.png)
+![Recommend by user](images/user-tab1.png)
 
 ## How to run
 ```bash
