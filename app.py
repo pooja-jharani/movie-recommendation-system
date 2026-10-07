@@ -20,7 +20,7 @@ st.set_page_config(page_title="Movie Recommender", page_icon="🎬", layout="wid
 def load_models():
     movies = load_movies()
     ratings = load_ratings()
-    content_model = ContentBasedRecommender(movies)
+    content_model = ContentBasedRecommender(movies, ratings)
     collab_model = CollaborativeRecommender(ratings, movies)
     return movies, ratings, content_model, collab_model
 
